@@ -1,8 +1,53 @@
-//Portfolio
-$fontFamilyTitulos: 'Poiret One', cursive, Helvetica, sans-serif;
-$fontFamilyParrafos: Raleway, Helvetica, sans-serif;
-// $btncolor: linear-gradient(360deg, rgb(92, 208, 212), rgb(190, 248, 248));
-$btncolor: linear-gradient(360deg, #0e7ec9, #adcdec);
-$btnContactoColor: linear-gradient(360deg, #0e7ec9, #adcdec);
-$proyectoContainerWidthPC: 85%;
-$proyectoContainerWidthMobile: 90%;
+// ------------------ Nav ------------------ //
+$height-nav: 1.25em;
+$fontSize-nav: 1em;
+$padding-nav: 1em;
+$color-navLinkSelected: #3fa3e6; // 1c7d36
+$bg-nav-linearGradient: linear-gradient(180deg, rgb(0, 0, 0), rgb(29, 29, 29));
+$bg-burguerNav-linearGradient: linear-gradient(0deg, rgb(0, 0, 0), rgb(29, 29, 29));
+$bg-nav-linearGradientLogo: linear-gradient(180deg, rgb(0, 0, 0), rgb(24, 24, 24), rgb(25, 25, 25));
+
+// ------------------ Portfolio ------------------ //
+// Google Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+$fontFamily-general: Raleway, Helvetica, sans-serif;
+$fontFamily-titles: 'Poiret One', cursive, Helvetica, sans-serif;
+
+// General items
+    // general text
+    $color-whiteText: #fff;
+    $color-blackText: #000;
+
+    // btn Scroll Up
+    $borderColor-btnScrollUp:  #0c5c92; //antes: #1c7d36
+    $bgColor-btnScrollUp:  #fff;
+    $borderColor-headArrowBtnScrollUp: transparent transparent #0e7ec9;
+    $borderColor-stickArrowBtnScrollUp: #0e7ec9;
+
+    // Links
+    $color-links: #fff;
+
+// Inicio
+$fontSize-titles: 2em;
+$fontSize-subTitles: 1em;
+
+// Conocimientos
+$bgColor-conocimientos: #0c0c0c;
+$bgColor-conocimientosBar: #40a2ed2a; // antes #00ff1e11
+$fontSize-conocimientosIcons: 2em;
+
+// Proyectos
+$color-proyectos: #000000;
+$bgColor-proyectos: linear-gradient(90deg, #04446f, #adcdec, #034f82, #001320);
+
+// Certificaciones
+$color-certificaciones_hover: rgb(39, 124, 180);
+$color-cvIcon_hover: #B30B00; 
+$bgColor-btnCV: linear-gradient(360deg, #0e7ec9, #adcdec);
+$bgColor-btnCV_hover: linear-gradient(180deg, #1b85cc, #8db0d2);
+
+// ------------------ Contacto ------------------ //
+$color-contacto-white: #fff;
+$bgColor-contacto-btn: linear-gradient(360deg, #00b31b, #8dd296);
+$bgColor-contacto-btn__hover: linear-gradient(180deg, #00b31b, #8dd296);

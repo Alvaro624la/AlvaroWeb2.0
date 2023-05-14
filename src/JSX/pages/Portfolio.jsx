@@ -23,10 +23,10 @@ function Portfolio() {
         <Proyectos/>
         <Certificaciones/>
         </ContextoADPC>
-        <aside id="scroll-up-btn" className={claseBtnUpScroll} onClick={()=>window.scroll(0, 0)}>
-            <div className="scroll-up__stick"></div>
-            <div className="scroll-up__arrow"></div>
-        </aside>
+        <article id="scroll-up-btn" className={claseBtnUpScroll} onClick={()=>window.scroll(0, 0)}>
+            <section className="scroll-up__stick"></section>
+            <section className="scroll-up__arrow"></section>
+        </article>
         </>
     );
 }

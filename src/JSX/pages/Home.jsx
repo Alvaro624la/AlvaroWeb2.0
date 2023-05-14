@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function Home() {
     return (
         <>
-        <img src="./img/proximamente.png"></img>
+        <main className='home'>
+            <img src="./img/proximamente.png"></img>
+        </main>
         </>
     )
 }

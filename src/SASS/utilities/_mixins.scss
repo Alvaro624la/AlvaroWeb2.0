@@ -1,0 +1,91 @@
+@mixin links{
+    text-decoration: underline;
+    color: $color-links;
+    cursor: pointer;
+
+    &:hover{
+        color:rgb(39, 124, 180);
+        transform: translate(-2px, -2px);
+        // filter: drop-shadow(2px 2px 2px #000);
+        filter: drop-shadow(0px 0px 7px $color-certificaciones_hover);
+        transition: all 0.15s;
+    }
+
+    &:active{
+        color: #7c7c7c;
+        transform: translate(0px, 0px);
+        filter: drop-shadow(0px 0px 0px #000);
+        transition: all 0.10s;
+    }
+}
+@mixin btns{
+    width: 100%;
+    border: 0;
+    font-size: 1.1em;
+    background: $bgColor-btnCV;
+    border-radius: 1em;
+    padding: 0.75em;
+    cursor: pointer;
+    font-family: $fontFamily-general;
+    margin-top: 1em;
+
+    &:hover{
+        background: $bgColor-btnCV_hover;
+    }
+    &:active{
+        filter: brightness(1.1);
+        background: $bgColor-btnCV_hover;
+        transform: scale(0.95);
+    }
+}
+@mixin redes{
+    color: #ffffff;
+    font-size: 2em;
+    margin: 3px;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover{
+        filter: drop-shadow(3px 3px 3px rgba(125, 125, 125, 0.5));
+        transform: translate(-3px, -3px);
+        transition: all 0.1s;
+    }
+    &:active{
+        color: rgb(100, 100, 100);
+    }
+}
+// ANIMATIONS
+@mixin anim-botiRueda{
+    animation: {
+        name: botiRueda;
+        duration: 1.5s;
+    }
+
+    @keyframes botiRueda{
+        0%{transform: scale(1); rotate:0deg;}
+        33%{transform: scale(1.4);}
+        50%{transform: scale(0.8); rotate:360deg;}
+        77%{transform: scale(1.2);}
+        100%{transform: scale(1);}
+    }
+}
+@mixin anim-cuelga{
+    animation: {
+        name: cuelga;
+        duration: 1.5s;
+    }
+
+    @keyframes cuelga{
+        0%{rotate: 0deg;}
+        10%{rotate: -10deg;}
+        20%{rotate: 9deg;}
+        30%{rotate: -8deg;}
+        40%{rotate: 7deg;}
+        50%{rotate: -6deg;}
+        60%{rotate: 5deg;}
+        70%{rotate: -4deg;}
+        80%{rotate: 3deg;}
+        90%{rotate: -1deg;}
+        100%{rotate: 0deg;}
+    }
+}

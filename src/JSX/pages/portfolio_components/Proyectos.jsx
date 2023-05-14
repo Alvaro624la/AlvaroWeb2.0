@@ -1,45 +1,71 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useRef, useEffect } from 'react';
 import { ContextADPC } from './context/Context';
-import { VscFoldDown } from "react-icons/vsc";
+import { HiArrowCircleLeft, HiArrowCircleRight } from "react-icons/hi";
 
 function Proyectos() {
-    const {Proyectos} = useContext(ContextADPC);
 
+    //Project laptop viewer
+    const {Proyectos} = useContext(ContextADPC);
     const arr = Object.entries(Proyectos);
+    const [i, setI] = useState(0);
+    const nextProject = () => i < arr.length - 1 ? setI(i+1) : setI(0);
+    const prevProject = () => i > 0 ? setI(i-1) : setI(arr.length-1);
+
+    //animate btns when scrollY arrives ==> when element is intersecting on intersectionObserver
+    const [pcBtnsClass, setPcBtnsClass] = useState('proyectos__pc-screen-cont__pc-viewer__btns__ico');
+    const [isIntersecting, setIsIntersecting] = useState(false);
+    const box = useRef();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+        ([entry]) => {
+            setIsIntersecting(entry.isIntersecting);
+        },
+        { rootMargin: "-300px" }
+        );
+        // console.log(isIntersecting);
+        observer.observe(box.current);
+    
+        return () => observer.disconnect();
+    }, [isIntersecting]);
+    
+    useEffect(() => {
+        if (isIntersecting) {
+            setPcBtnsClass('proyectos__pc-screen-cont__pc-viewer__btns__ico anim-botiRueda');
+        } else {
+            setPcBtnsClass('proyectos__pc-screen-cont__pc-viewer__btns__ico');
+        }
+    }, [isIntersecting]);
+
     return (
         <>
-        <div className='proyectos'>
-            {
-            arr.map((e)=>{
-                return <div key={e[0]}className='proyectos__proyecto-container'>
-                    <h3 className='proyectos__proyecto-container__nombre'>{e[1].nombre}</h3>
-                    <p className='proyectos__proyecto-container__subnombre'>{e[1].subnombre}</p>
-                    <div id='cuadrado' className='proyectos__proyecto-container__cuadrado'>
-                        <a href={e[1].url} target='_blank' rel="noreferrer" className='proyectos__proyecto-container__cuadrado__img-a'>
-                            <img className='proyectos__proyecto-container__cuadrado__img-a__img' src={e[1].img} alt={`imagen de muestra del proyecto ${e[1].nombre}`}/>
-                        </a>
-                        <div className='proyectos__proyecto-container__cuadrado__loexpandido'>
-                            <p className='proyectos__proyecto-container__cuadrado__loexpandido__descripcion'>{e[1].descripcion}</p>
-                            <p className='proyectos__proyecto-container__cuadrado__loexpandido__lenguaje'>Lenguaje: {e[1].lenguaje}</p>
-                            <a href={e[1].url} target='_blank' rel="noreferrer" className='proyectos__proyecto-container__cuadrado__loexpandido__enlace'>Enlace aquí</a>
-                        </div>
-                    </div>
-                    <button className='proyectos__proyecto-container__btn' onClick={(e)=>{
-                        e.target.parentNode.childNodes[2].childNodes[1].classList.toggle('funcionExpandir');
-                        e.target.parentNode.childNodes[3].childNodes[0].classList.toggle('reactIconContraer');
-                        }}>
-                            {<VscFoldDown className='reactIconExpandir'/>}
-                        </button>
-                </div>
-            })
-            }
-            </div>
+        <main className='proyectos'>
+            <article className='proyectos__pc-screen-cont'>
+                <h3 className='proyectos__pc-screen-cont__nombre'>{arr[i][1].nombre}</h3>
+                <section className='proyectos__pc-screen-cont__subnombre'>
+                    <p className='proyectos__pc-screen-cont__subnombre__p'>{arr[i][1].subnombre}</p>
+                </section>
+                <section ref={box} className='proyectos__pc-screen-cont__pc-viewer'>
+                    <button className='proyectos__pc-screen-cont__pc-viewer__btns' onClick={()=>prevProject()}>
+                        <HiArrowCircleLeft className={pcBtnsClass}/>
+                    </button>
+                    <img className='proyectos__pc-screen-cont__pc-viewer__relative-div' src='/img/portfolio/pc-screen1.png' style={{backgroundImage: `url(${arr[i][1].img})`}}/>
+                    <button className='proyectos__pc-screen-cont__pc-viewer__btns' onClick={()=>nextProject()}>
+                        <HiArrowCircleRight className={pcBtnsClass}/>
+                    </button>
+                </section>
+                <section className='proyectos__pc-screen-cont__descripcion'>
+                    <p className='proyectos__pc-screen-cont__descripcion__p'>{arr[i][1].descripcion}</p>
+                </section>
+                <p className='proyectos__pc-screen-cont__lenguaje'>Lenguaje: {arr[i][1].lenguaje}</p>
+                <a href={arr[i][1].url} target='_blank' rel="noreferrer" className='proyectos__pc-screen-cont__enlace'>Enlace aquí</a>
+            </article>
+            <article className='proyectos__title-cont'>
+                <h1 className='proyectos__title-cont__p'>Proyectos</h1>
+            </article>
+        </main>
         </>
     )
 }
 
 export default Proyectos
-
-
-//clase 'expandir' a <div className='proyectos__proyecto-container__cuadrado'>
-//clase display-none

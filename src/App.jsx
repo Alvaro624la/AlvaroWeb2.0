@@ -6,10 +6,9 @@ import Home from './JSX/pages/Home';
 import Portfolio from './JSX/pages/Portfolio';
 import Blog from './JSX/pages/Blog';
 import DevTests from './JSX/pages/Devtests';
-import DevEstudio from './JSX/pages/Devestudio';
+import Contacto from './JSX/pages/Contacto';
 
 function App() {
-
   return (
     <>
     <BrowserRouter>
@@ -21,10 +20,11 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/portfolio' element={<Portfolio/>}/>
         <Route path='/blog' element={<Blog/>}/>
+        <Route path='/contacto' element={<Contacto/>}/>
         {/* Add blog articles here: */}
         {/* <Route path='/blog/article1title' element={<article1title/>}/> */}
         <Route path='/devtests' element={<DevTests/>}/>
-        <Route path='/devestudio' element={<DevEstudio/>}/>
+
         {/* <Route path='/*' element={<Error404/>}/> */}
       </Routes>
       <Footer/>
@@ -32,5 +32,4 @@ function App() {
     </>
   )
 }
-
 export default App

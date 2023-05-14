@@ -3,7 +3,9 @@ import React from 'react'
 function Devtests() {
     return (
         <>
-        <img src="./img/proximamente.png"></img>
+        <main className='devtests'>
+            <img src="./img/proximamente.png"></img>
+        </main>
         </>
     )
 }

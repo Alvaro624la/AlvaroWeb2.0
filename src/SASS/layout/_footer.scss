@@ -1,0 +1,36 @@
+.footer-body{
+    background: #000;
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(29, 29, 29));
+    color: #fff;
+
+    &__container{
+        padding: 1em;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+
+        &__seguir-container{
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+        
+        &__icons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            place-items: center;
+
+            &__logo{
+                width: 150px;
+                height: 56px; // arreglar problema CSS ¿imagen se deforma hacia abajo en Safari?
+                filter: invert(100%) sepia(40%) saturate(530%) hue-rotate(268deg) brightness(112%) contrast(101%);
+            }
+            
+            & a{
+                @include redes;
+            }
+        }
+        }
+    }
+}

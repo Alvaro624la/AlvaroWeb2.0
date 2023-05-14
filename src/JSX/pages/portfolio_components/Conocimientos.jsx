@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ContextADPC } from './context/Context';
 
 function Conocimientos() {
@@ -6,17 +6,22 @@ function Conocimientos() {
 
   const arr = Object.entries(Conocimientos);
 
+  const [widthBar, setWidthBar] = useState();
+  const scrollYPosition = window.scrollY;
+  window.addEventListener('scroll', ()=> (scrollYPosition/9) < 100 ? setWidthBar(scrollYPosition/9) : setWidthBar(100));
+
   return (
     <>
-    <div className='conocimientos-cont'>
+    <main className='conocimientos-cont'>
+      <aside className='conocimientos-cont__bar' style={{width: `${widthBar}%`}}></aside>
       {arr.map((e)=>{       
-        return <div key={`conocimientos-cont__card-${e[0]}`} className='conocimientos-cont__card'>
-            <div key={`conocimientos-cont__card__logo-${e[0]}`} className='conocimientos-cont__card__icons'>{e[1].foto}</div>
-            <div key={`conocimientos-cont__card__description-${e[0]}`} className='conocimientos-cont__card__descriptions'>{e[1].texto}</div>
-          </div>
+        return <article key={`conocimientos-cont__card-${e[0]}`} className='conocimientos-cont__card'>
+            <section key={`conocimientos-cont__card__logo-${e[0]}`} className='conocimientos-cont__card__icons'>{e[1].foto}</section>
+            <section key={`conocimientos-cont__card__description-${e[0]}`} className='conocimientos-cont__card__descriptions'>{e[1].texto}</section>
+          </article>
         })
       }
-    </div>
+    </main>
     </>
   )
 }

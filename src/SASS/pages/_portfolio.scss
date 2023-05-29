@@ -60,14 +60,19 @@ body{
 }
 // ------ INICIO ------ //
 .inicio{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: flex-start;
     align-items: center;
-    background: linear-gradient(180deg, #525252, #255fa7);
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 1em;
+    background: linear-gradient(180deg, #525252, #255fa7);
+    background-image: url('/img/portfolio/bgInicio.svg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 
     &__titles-cont{
         z-index: 4;
@@ -76,7 +81,7 @@ body{
         width: 59%;
 
         &__fotoperfil{
-            width: 100%;
+            width: 80%;
             min-width: 80px;
             max-width: 400px;
             border-bottom: 4px solid #0c0c0c;
@@ -94,76 +99,50 @@ body{
             font-size: $fontSize-subTitles;
             font-weight: 600;
         }
-    }
-    
-    // &__foto-cont{
-    //     z-index: 5;
-    //     border: 1px solid red;
-    //     width: 49%;
-
-    //     &__fotoperfil{
-    //         width: 40%;
-    //         min-width: 200px;
-    //         max-width: 800px;
-    //         border-bottom: 4px solid #0c0c0c;
-    //         border-radius: 20px;
-    //         margin-top: 3em;
-    //     }
-    // }
-    //entrada con 6 targetas que se agrandan width y luego se mueven a laderecha con left... para dar efecto de entrada animada
-    &__entry-animation{
-        background: linear-gradient(180deg, #525252, #255fa7);
-        background-image: url('/img/portfolio/bg20.jpg');
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #fff;
-
-        & > *{
-            width: 50%;
-            left: -100%;
-            height: calc(100% - 3em);
-            position: absolute;
-            top: 3em;
-            animation-duration: 1s;
-            animation-timing-function: ease-out;
-            animation-fill-mode: forwards;
-            background-color: #0c0c0c;
-            border-radius: 0 0 0 1.5em;
-            background-image: url('/img/portfolio/bg17.jpg');
-            background-size: auto 100vh;
-            // no recomiendo transition para el telón
-            // transition: left 0.5s ease-out; 
-        }
-        & > :nth-child(3){
-            z-index: 4;
-            background: #0c0c0c;
-            width: 100%;
-            left: 0%;
-            animation-name: entry-bg;
-        }
-        @keyframes entry-bg {
-            0% {left: 0%};
-            60% {left: 100%};
-            100% {left: 100%};
-        }
-        & > :nth-child(2){
-            animation-name: entry-cards;
-            transform: rotate(0deg);
-        }
-        @keyframes entry-cards {
-            0%{left: -50%};
-            60%{left: 52%};
-            75%{left: 49.4%};
-            100%{left: 50%};
-        }
-        & > :nth-child(1){
-            z-index: 4;
+        //entrada con 6 targetas que se agrandan width y luego se mueven a laderecha con left... para dar efecto de entrada animada
+        &__entry-animation{
+            & > *{
+                width: 50%;
+                left: -100%;
+                top: $navTotalHeight;
+                min-height: calc(100% - $navTotalHeight);
+                position: absolute;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                animation-fill-mode: forwards;
+                background-color: #0c0c0c;
+                border-radius: 0 0 0 1.5em;
+                background-image: url('/img/portfolio/telon.jpg');
+                background-size: auto 100%;
+                box-shadow: -8px 10px 20px #000;
+                // no recomiendo transition para el telón
+                // transition: left 0.5s ease-out; 
+            }
+            & > :nth-child(3){
+                z-index: 4;
+                background: #0c0c0c;
+                width: 100%;
+                left: 0%;
+                animation-name: entry-bg;
+            }
+            @keyframes entry-bg {
+                0% {left: 0%};
+                60% {left: 100%};
+                100% {left: 100%};
+            }
+            & > :nth-child(2){
+                animation-name: entry-cards;
+                transform: rotate(0deg);
+            }
+            @keyframes entry-cards {
+                0%{left: -50%};
+                60%{left: 62%};
+                75%{left: 59.4%};
+                100%{left: 60%};
+            }
+            & > :nth-child(1){
+                z-index: 4;
+            }
         }
     }
 }
@@ -206,7 +185,7 @@ body{
 // ------ PROYECTOS ------ //
 .proyectos{
     background: $bgColor-proyectos;
-    background: url('../../../img/portfolio/bg20.jpg');
+    background: url('/img/portfolio/bgProyectos.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 18%;
@@ -218,7 +197,7 @@ body{
     align-items: center;
     color: $color-proyectos;
     padding: 1em 0 2em 0;
-    min-height: 100vh;
+    height: 100%;
 
     &__pc-screen-cont{
         padding: 1em 0em;
@@ -264,6 +243,7 @@ body{
             }
 
             &__relative-div{
+                background-image: url('https://alvaro624la.github.io/AlvaroWeb2.0/img/portfolio/fotoperfilEDIT2.png');
                 max-width: 28em;
                 width: 100%;
                 background-size: 85% 80%;
@@ -321,7 +301,7 @@ body{
     position: relative;
     // fallback
     background-color: #fff;
-    background-image: url('../../../img/portfolio/111.png');
+    background-image: url('/img/portfolio/bgConocimientos.svg');
     background-size: cover;
     // background-attachment: fixed;
     display: flex;
@@ -330,7 +310,7 @@ body{
     justify-content: space-around;
     align-items: center;
     padding-bottom: 3em;
-    height: calc(100vh - 3em);
+    min-height: calc(100vh - 3em);
 
     &__certif{
         z-index: 1;
@@ -777,15 +757,6 @@ body{
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px){}
 
-
-// ANIMATIONS
-.anim-botiRueda{
-    @include anim-botiRueda;
-}
-.anim-cuelga{
-    @include anim-cuelga;
-}
-
 @media (max-width: 450px){
     // ------ PROYECTOS ------ //
     .proyectos{
@@ -815,4 +786,12 @@ body{
     .certif-y-cv-cont{
         padding-bottom: 6em;
     }
+}
+
+// ANIMATIONS
+.anim-botiRueda{
+    @include anim-botiRueda;
+}
+.anim-cuelga{
+    @include anim-cuelga;
 }

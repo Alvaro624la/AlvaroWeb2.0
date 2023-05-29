@@ -1,0 +1,132 @@
+.post-main{
+    background-color: $bgColor-darkMode;
+    padding-bottom: 2em;
+
+    &__btn-volver{
+        font-size: 1em;
+        border-radius: 3em;
+        border: 0;
+        padding: .25em .75em .25em .25em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 $padding-post;
+        cursor: pointer;
+        background-color: #fff;
+        transition: .075s;
+
+        &:hover{
+            transition: .075s;
+            color: #fff;
+            background: #3fa3e655;
+        }
+
+        &__icon{
+            font-size: 2em;
+            margin-right: .33em;
+        }
+    }
+}
+
+.post{
+    color: $color-darkMode;
+    padding: 5em $padding-post 3em $padding-post;
+    background-color: $bgColor-darkMode;
+
+    & > p{
+        padding: 0 $padding-post;
+        text-align: justify;
+        font-size: 1em;
+    }
+    & > h1{
+        text-align: center;
+        font-size: 2em;
+    }
+    & > h2{
+        font-size: 1.25em;
+        margin: 2em 0 1em 0;
+    }
+    & * span{
+        font-weight: bold;
+    }
+    & > * small{
+        font-style: italic;
+    }
+    & * li{
+        margin: 0 $padding-post;
+    }
+    &__read-time{
+        opacity: .75;
+        font-weight: normal;
+        font-size: 0.75em;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__img-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & > img{
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+        & > figcaption{
+            font-size: .75em;
+            text-align: center;
+        }
+    }
+    &__img-normal{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+
+        & > img{
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            max-width: 500px;
+        }
+        & > figcaption{
+            font-size: .75em;
+            text-align: center;
+        }
+    }
+};
+@media (max-width: 810px){
+    .post{
+        padding: 5em $padding-post-mobile;
+    
+        & > p{
+            padding: 0 $padding-post-mobile;
+        }
+        & * li{
+            margin: 0 $padding-post-mobile;
+        }
+    };
+}
+@media (max-width: 425px){
+    .post-main{
+        padding-bottom: 2em;
+        
+        &__btn-volver{
+            margin: 0 $padding-post-mobile;
+        }
+    }
+    .post{
+        padding: 3em $padding-post-mobile;
+    
+        & > p{
+            padding: 0;
+        }
+        & * li{
+            margin: 0 $padding-post-mobile;
+        }
+    };
+}
+// para el desarrollador
+.corregir{
+    color: red;
+    // background-color: rgb(178, 0, 0);
+}

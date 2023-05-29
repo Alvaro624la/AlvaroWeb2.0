@@ -1,6 +1,9 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
-import { ContextADPC } from './context/Context';
+import { ContextADPC } from './context/ContextPortfolio';
 import { HiArrowCircleLeft, HiArrowCircleRight } from "react-icons/hi";
+import laptopImg from '/img/portfolio/pc-screen1.png'; // 67 - 176 KB
+import laptopImgFallback1 from '/img/portfolio/loading-laptop.svg'; // 7 KB
+import laptopImgFallback2 from '/img/portfolio/solid_white.svg'; // 1 KB
 
 function Proyectos() {
 
@@ -21,7 +24,7 @@ function Proyectos() {
         ([entry]) => {
             setIsIntersecting(entry.isIntersecting);
         },
-        { rootMargin: "-300px" }
+        { rootMargin: "-30px" }
         );
         // console.log(isIntersecting);
         observer.observe(box.current);
@@ -40,29 +43,29 @@ function Proyectos() {
     return (
         <>
         <main className='proyectos'>
-            <article className='proyectos__pc-screen-cont'>
+            <section className='proyectos__pc-screen-cont'>
                 <h3 className='proyectos__pc-screen-cont__nombre'>{arr[i][1].nombre}</h3>
-                <section className='proyectos__pc-screen-cont__subnombre'>
+                <article className='proyectos__pc-screen-cont__subnombre'>
                     <p className='proyectos__pc-screen-cont__subnombre__p'>{arr[i][1].subnombre}</p>
-                </section>
-                <section ref={box} className='proyectos__pc-screen-cont__pc-viewer'>
+                </article>
+                <article ref={box} className='proyectos__pc-screen-cont__pc-viewer'>
                     <button className='proyectos__pc-screen-cont__pc-viewer__btns' onClick={()=>prevProject()}>
-                        <HiArrowCircleLeft className={pcBtnsClass}/>
+                        <HiArrowCircleLeft className={pcBtnsClass} aria-label='izq/left-btn'/>
                     </button>
-                    <img className='proyectos__pc-screen-cont__pc-viewer__relative-div' src='/img/portfolio/pc-screen1.png' style={{backgroundImage: `url(${arr[i][1].img})`}}/>
+                    <img className='proyectos__pc-screen-cont__pc-viewer__relative-div' src={laptopImg || laptopImgFallback1 || laptopImgFallback2} style={{backgroundImage: `url(${arr[i][1].img})`}} alt='visor interactivo de proyectos encima del portatil'/>
                     <button className='proyectos__pc-screen-cont__pc-viewer__btns' onClick={()=>nextProject()}>
-                        <HiArrowCircleRight className={pcBtnsClass}/>
+                        <HiArrowCircleRight className={pcBtnsClass} aria-label='dcha/right-btn'/>
                     </button>
-                </section>
-                <section className='proyectos__pc-screen-cont__descripcion'>
+                </article>
+                <article className='proyectos__pc-screen-cont__descripcion'>
                     <p className='proyectos__pc-screen-cont__descripcion__p'>{arr[i][1].descripcion}</p>
-                </section>
+                </article>
                 <p className='proyectos__pc-screen-cont__lenguaje'>Lenguaje: {arr[i][1].lenguaje}</p>
                 <a href={arr[i][1].url} target='_blank' rel="noreferrer" className='proyectos__pc-screen-cont__enlace'>Enlace aquí</a>
-            </article>
-            <article className='proyectos__title-cont'>
+            </section>
+            <section className='proyectos__title-cont'>
                 <h1 className='proyectos__title-cont__p'>Proyectos</h1>
-            </article>
+            </section>
         </main>
         </>
     )

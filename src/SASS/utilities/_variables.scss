@@ -2,6 +2,7 @@
 $height-nav: 1.25em;
 $fontSize-nav: 1em;
 $padding-nav: 1em;
+$navTotalHeight: calc($height-nav + $fontSize-nav + $padding-nav);
 $color-navLinkSelected: #3fa3e6; // 1c7d36
 $bg-nav-linearGradient: linear-gradient(180deg, rgb(0, 0, 0), rgb(29, 29, 29));
 $bg-burguerNav-linearGradient: linear-gradient(0deg, rgb(0, 0, 0), rgb(29, 29, 29));
@@ -46,6 +47,15 @@ $color-certificaciones_hover: rgb(39, 124, 180);
 $color-cvIcon_hover: #B30B00; 
 $bgColor-btnCV: linear-gradient(360deg, #0e7ec9, #adcdec);
 $bgColor-btnCV_hover: linear-gradient(180deg, #1b85cc, #8db0d2);
+
+// ------------------ Blog ------------------ //
+$color-normalMode: #000;
+$color-darkMode: #fff;
+$bgColor-normalMode: #fff;
+$bgColor-darkMode: #0c0c0c;
+
+$padding-post: 4em;
+$padding-post-mobile: 2em;
 
 // ------------------ Contacto ------------------ //
 $color-contacto-white: #fff;

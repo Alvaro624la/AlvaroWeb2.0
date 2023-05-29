@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
+import logoADP from '/img/logo-adp.png';
 
 function nav() {
     //burguer Nav in - on and bars move functions
@@ -10,7 +11,7 @@ function nav() {
         burguerClass === 'nav__burguer-cont' ? setBurguerClass('nav__burguer-cont burguer-in') : setBurguerClass('nav__burguer-cont');
     }
     const scrollAndHideBrgNav = (e) => {
-    console.log(navWAIARIA.current.childNodes);
+    // console.log(navWAIARIA.current.childNodes);
 
         //     scrollTo(x, y)
         window.scrollTo(0, 0);
@@ -22,11 +23,11 @@ function nav() {
     return (
         <>
         <nav className='nav'>
-            <NavLink to='/'>
-                <img aria-label='Logo Alvaro de Prado' alt='Logo Alvaro de Prado' src='./img/logo-adp.png'/>
+            <NavLink to=''>
+                <img aria-label='Logo Alvaro de Prado' alt='Logo Alvaro de Prado' src={logoADP}/>
             </NavLink>
             <article className={burguerClass}>
-                <NavLink className='nav__link' to='/' onClick={scrollAndHideBrgNav}>Home</NavLink>
+                <NavLink className='nav__link' to='' onClick={scrollAndHideBrgNav}>Inicio</NavLink>
                 <NavLink className='nav__link' to='/portfolio' onClick={scrollAndHideBrgNav}>Portfolio</NavLink>
                 <NavLink className='nav__link' to='/blog' onClick={scrollAndHideBrgNav}>Blog</NavLink>
                 <NavLink className='nav__link' to='/devtests' onClick={scrollAndHideBrgNav}>DevTests</NavLink>

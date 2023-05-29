@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import foto from '/img/portfolio/fotoperfilEDIT2.png';
+import foto from '/img/portfolio/fotoperfilED.png';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 // EmailJS
 import emailjs from '@emailjs/browser';
@@ -35,23 +35,23 @@ function Contacto() {
     return (
         <>
         <main className='contacto'>
-            <article className='contacto__cabecera'>
-                <section className='contacto__cabecera__texto-cont'>
+            <section className='contacto__cabecera'>
+                <article className='contacto__cabecera__texto-cont'>
                     <h1><span>Contacta</span> conmigo a través de mis redes sociales</h1>
-                    <section>
+                    <article>
                         <a href='https://www.linkedin.com/in/alvaro-de-prado/' target='_blank' rel='noreferrer noopener' aria-label='LinkedIn logo-link'>
                             <BsLinkedin alt='LinkedIn logo svg image'/>
                         </a>
                         <a href='https://github.com/Alvaro624la' target='_blank' rel='noreferrer noopener' aria-label='GitHub logo-link'>
                             <BsGithub alt='GitHub logo svg image'/>
                         </a>
-                    </section>
+                    </article>
                     <h1>o bien, rellenando los campos siguientes:</h1>
-                </section>
-                <section className='contacto__cabecera__foto-cont'>
+                </article>
+                <article className='contacto__cabecera__foto-cont'>
                     <img src={foto}></img>
-                </section>
-            </article>
+                </article>
+            </section>
             <form ref={form} className='contacto__form' method='post' autoComplete='on' onSubmit={sendEmail}>
                 <fieldset className='contacto__form__recuadro'>
                     <legend>Contacto</legend>

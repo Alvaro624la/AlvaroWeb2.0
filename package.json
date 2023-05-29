@@ -2,7 +2,7 @@
   "name": "alvaroweb2.0",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://alvaro624la.github.io/AlvaroWeb2.0",
+  "homepage": "https://alvaro624la.github.io/AlvaroWeb2.0/",
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -19,7 +19,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.1",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "use-history": "^1.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

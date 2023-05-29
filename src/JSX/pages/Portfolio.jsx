@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Inicio from './portfolio_components/Inicio';
 import Conocimientos from './portfolio_components/Conocimientos';
 import Proyectos from './portfolio_components/Proyectos';
-import ContextoADPC from './portfolio_components/context/Context';
+import ContextoADPC from './portfolio_components/context/ContextPortfolio';
 import Certificaciones from './portfolio_components/Certificaciones';
 
 function Portfolio() {
@@ -18,15 +18,15 @@ function Portfolio() {
     return (
         <>
         <ContextoADPC>
-        <Inicio/>
-        <Conocimientos/>
-        <Proyectos/>
-        <Certificaciones/>
+            <Inicio/>
+            <Conocimientos/>
+            <Proyectos/>
+            <Certificaciones/>
         </ContextoADPC>
-        <article id="scroll-up-btn" className={claseBtnUpScroll} onClick={()=>window.scroll(0, 0)}>
-            <section className="scroll-up__stick"></section>
-            <section className="scroll-up__arrow"></section>
-        </article>
+        <section id="scroll-up-btn" className={claseBtnUpScroll} onClick={()=>window.scroll(0, 0)}>
+            <article className="scroll-up__stick"></article>
+            <article className="scroll-up__arrow"></article>
+        </section>
         </>
     );
 }

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
-import { ContextADPC } from './context/Context';
-import fotoPerfil from '/img/portfolio/fotoperfilEDIT3.png';
+import { ContextADPC } from './context/ContextPortfolio';
+import fotoPerfil from '/img/portfolio/fotoperfilED.png';
 
 function Inicio() {
   const {ADPC} = useContext(ContextADPC);
@@ -24,23 +24,19 @@ function Inicio() {
     window.scrollY === 0 ? (setLeft(60), setWidth(40)) : false;
   });
 
-
   return (
     <>
     <header className='inicio'>
-      <article className='inicio__titles-cont'>
+      <section className='inicio__titles-cont'>
         <img className='inicio__titles-cont__fotoperfil' src={fotoPerfil} alt='foto de perfil de Álvaro de Prado'/>
         <h1 className='inicio__titles-cont__titulo'>{ADPC.nombrecompleto}</h1>
         <h4 className='inicio__titles-cont__subtitulo'>{ADPC.descripcion}</h4>
-      </article>
-      {/* <article className='inicio__foto-cont'>
-        <img className='inicio__foto-cont__fotoperfil' src={fotoPerfil} alt='foto de perfil de Álvaro de Prado'/>
-      </article> */}
-      <aside className='inicio__entry-animation'>
-        <div className='inicio__entry-animation__card' style={{opacity: opacityAux, width: `${width}vw`, left:`${left}%`}}></div>
-        <div className='inicio__entry-animation__card' style={{display: display}}></div>
-        <div className='inicio__entry-animation__card' style={{display: display}}></div>
-      </aside>
+        <article className='inicio__titles-cont__entry-animation'>
+          <div className='inicio__titles-cont__entry-animation__card' style={{opacity: opacityAux, width: `${width}vw`, left:`${left}%`}}></div>
+          <div className='inicio__titles-cont__entry-animation__card' style={{display: display}}></div>
+          <div className='inicio__titles-cont__entry-animation__card' style={{display: display}}></div>
+        </article>
+      </section>
     </header>
     </>
   )

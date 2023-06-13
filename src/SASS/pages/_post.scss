@@ -1,12 +1,20 @@
 .post-main{
-    background-color: $bgColor-darkMode;
     padding-bottom: 2em;
+    background-color: $bgColor-darkMode;
+    color: $color-darkMode;
+
+    &__btn-dark-mode{
+        margin: 2.2em .75em .33em .5em;
+        font-size: 2em;
+        cursor: pointer;
+        float: right;
+    }
 
     &__btn-volver{
         font-size: 1em;
         border-radius: 3em;
-        border: 0;
-        padding: .25em .75em .25em .25em;
+        border: 4px solid transparent;
+        padding: .15em .65em .15em .15em;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -29,9 +37,7 @@
 }
 
 .post{
-    color: $color-darkMode;
-    padding: 5em $padding-post 3em $padding-post;
-    background-color: $bgColor-darkMode;
+    padding: 5em $padding-post 3em $padding-post; // padding: 5em $padding-post 3em $padding-post;
 
     & > p{
         padding: 0 $padding-post;
@@ -52,9 +58,27 @@
     & > * small{
         font-style: italic;
     }
-    & * li{
-        margin: 0 $padding-post;
+    & > ul > li{
+        margin-bottom: .25em;
+        margin-left: $padding-post;
     }
+    & code{
+        // todos los <ol> dentro de <code>
+        & ol{
+            text-align: left;
+            list-style-type: none;
+            padding: 0;
+            // margin: 0 0 0 $padding-post;
+            background-color: $bgColor-code;
+            border-radius: 8px;
+            color: #f1f1f1;
+            
+            & > li{
+                margin-left: 1em;
+            }
+        }
+    }
+    
     &__read-time{
         opacity: .75;
         font-weight: normal;
@@ -101,8 +125,9 @@
         & > p{
             padding: 0 $padding-post-mobile;
         }
-        & * li{
-            margin: 0 $padding-post-mobile;
+        & > ul > li{
+            margin-bottom: .25em;
+            margin-left: $padding-post-mobile;
         }
     };
 }
@@ -115,13 +140,13 @@
         }
     }
     .post{
-        padding: 3em $padding-post-mobile;
+        padding: 5em $padding-post-mobile;
     
         & > p{
             padding: 0;
         }
-        & * li{
-            margin: 0 $padding-post-mobile;
+        & > ul > li{
+            margin-left: -1em;
         }
     };
 }
@@ -129,4 +154,16 @@
 .corregir{
     color: red;
     // background-color: rgb(178, 0, 0);
+}
+.dark-mode-class{
+    background-color: #fff;
+    color: #000;
+}
+.dark-mode-volverBtn-class{
+    border: 4px solid #3fa3e6;
+
+    &:hover{
+        color: #000;
+        background: #3fa3e655;
+    }
 }

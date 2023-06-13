@@ -20,12 +20,12 @@
                     color: #3fa3e6;
                 }
             }
-            & > section{
+            & > article{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
             }
-            & > section > a > *{
+            & > article > a > *{
                 @include redes;
             }
         }

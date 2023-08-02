@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import logoADP from '/img/logo-adp.png';
+import logoADP from '../../../src/img/logo-adp.png';
 
 function nav() {
     //burguer Nav in - on and bars move functions

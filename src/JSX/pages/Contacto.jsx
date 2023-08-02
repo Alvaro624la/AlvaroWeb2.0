@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import foto from '/img/portfolio/fotoperfilED.png';
+import foto from '../../../src/img/portfolio/fotoperfilED.png';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 // EmailJS
 import emailjs from '@emailjs/browser';

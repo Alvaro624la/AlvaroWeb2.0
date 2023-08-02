@@ -1,9 +1,9 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
 import { ContextADPC } from './context/ContextPortfolio';
 import { HiArrowCircleLeft, HiArrowCircleRight } from "react-icons/hi";
-import laptopImg from '/img/portfolio/pc-screen1.png'; // 67 - 176 KB
-import laptopImgFallback1 from '/img/portfolio/loading-laptop.svg'; // 7 KB
-import laptopImgFallback2 from '/img/portfolio/solid_white.svg'; // 1 KB
+import laptopImg from '../../../../src/img/portfolio/pc-screen1.png'; // 67 - 176 KB
+import laptopImgFallback1 from '../../../../src/img/portfolio/loading-laptop.svg'; // 7 KB
+import laptopImgFallback2 from '../../../../src/img/portfolio/solid_white.svg'; // 1 KB
 
 function Proyectos() {
 

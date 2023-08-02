@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { ContextADPC } from './context/ContextPortfolio';
-import fotoPerfil from '/img/portfolio/fotoperfilED.png';
+import fotoPerfil from '../../../../src/img/portfolio/fotoperfilED.png';
 
 function Inicio() {
   const {ADPC} = useContext(ContextADPC);

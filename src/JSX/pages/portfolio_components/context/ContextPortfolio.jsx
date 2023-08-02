@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import fotoProyectoVallulis from '/img/portfolio/proyecto-vallulis.jpg';
-import fotoProyectoMetJS from '/img/portfolio/proyecto-metjs.jpg';
-import fotoProyectoDD from '/img/portfolio/proyecto-dd.jpg';
-import fotoProyectoPhotographer from '/img/portfolio/proyecto-photographer.jpg';
-import fotoProyectoPortfolio from '/img/portfolio/proyecto-portfolio.jpg';
+import fotoProyectoVallulis from '../../../../../src/img/portfolio/proyecto-vallulis.jpg';
+import fotoProyectoMetJS from '../../../../../src/img/portfolio/proyecto-metjs.jpg';
+import fotoProyectoDD from '../../../../../src/img/portfolio/proyecto-dd.jpg';
+import fotoProyectoPhotographer from '../../../../../src/img/portfolio/proyecto-photographer.jpg';
+import fotoProyectoPortfolio from '../../../../../src/img/portfolio/proyecto-portfolio.jpg';
 import { FaGitAlt, FaJs, FaHtml5, FaCss3Alt, FaReact, FaWordpress, FaSass } from "react-icons/fa";
 import { SiWebpack, SiBabel, SiVite } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";

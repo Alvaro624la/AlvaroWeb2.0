@@ -69,7 +69,7 @@ body{
     min-height: 100vh;
     padding: 0 1em;
     background: linear-gradient(180deg, #525252, #255fa7);
-    background-image: url('/img/portfolio/bgInicio.svg');
+    background-image: url('../img/portfolio/bgInicio.svg');
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -112,7 +112,7 @@ body{
                 animation-fill-mode: forwards;
                 background-color: #0c0c0c;
                 border-radius: 0 0 0 1.5em;
-                background-image: url('/img/portfolio/telon.jpg');
+                background-image: url('../img/portfolio/telon.jpg');
                 background-size: auto 100%;
                 box-shadow: -8px 10px 20px #000;
                 // no recomiendo transition para el telón
@@ -185,7 +185,7 @@ body{
 // ------ PROYECTOS ------ //
 .proyectos{
     background: $bgColor-proyectos;
-    background: url('/img/portfolio/bgProyectos.jpg');
+    background: url('../img/portfolio/bgProyectos.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 18%;
@@ -243,7 +243,7 @@ body{
             }
 
             &__relative-div{
-                background-image: url('https://alvaro624la.github.io/AlvaroWeb2.0/img/portfolio/fotoperfilEDIT2.png');
+                background-image: url('https://alvaro624la.github.io/AlvaroWeb2.0../img/portfolio/fotoperfilEDIT2.png');
                 max-width: 28em;
                 width: 100%;
                 background-size: 85% 80%;
@@ -301,7 +301,7 @@ body{
     position: relative;
     // fallback
     background-color: #fff;
-    background-image: url('/img/portfolio/bgConocimientos.svg');
+    background-image: url('../img/portfolio/bgConocimientos.svg');
     background-size: cover;
     // background-attachment: fixed;
     display: flex;

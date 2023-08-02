@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ContextPosts } from './blog_articles/ContextBlog';
 import cardLogo from '/logo-pattern-adp2.png';
 import { BiSearchAlt2 } from "react-icons/bi";
+import temporalPhoto from "../../../src/img/proximamente.png";
 
 function Blog() {
     const { Posts } = useContext(ContextPosts);
@@ -82,7 +83,7 @@ function Blog() {
     return (
         <>
         <main className='blog'>
-            <section className='blog__search-cont'>
+            {/* <section className='blog__search-cont'>
                 <article className='blog__search-cont__searcher'>
                     <input ref={inputSearcher} onChange={searchWords} onKeyDown={e => e.key === 'Enter' ? searchWords() : false} className='blog__search-cont__searcher__input' type='text'></input>
                     <button type='submit' onClick={searchWords}><BiSearchAlt2/></button>
@@ -109,7 +110,16 @@ function Blog() {
                         </li>
                     })}
                 </ul>
-            </section>
+            </section> */}
+            <div style={{
+                padding: '1em',
+                display: 'grid',
+                justifyItems: 'center'
+                }}>
+                <img src={temporalPhoto} style={{width: '80%', maxWidth: '600px'}}/>
+                <Link to={`/portfolio`} style={{textDecoration: 'none'}}><button style={{width: '80vw'}} class="temporal-btn">Ver Portfolio</button></Link>
+                <h1>⚠️ Blog: Álvaro está trabajando en ello, probablemente, ahora mismo. ⚠️</h1>
+            </div>
         </main>
         </>
     )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import logoADP from '/img/logo-adp.png';
+import logoADP from '../../../src/img/logo-adp.png';
 
 function footer() {
     return (

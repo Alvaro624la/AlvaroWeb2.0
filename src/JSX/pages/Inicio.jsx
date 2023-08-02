@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ContextPosts } from './blog_articles/ContextBlog';
-import fotoPortadaPortfolio from '../../../public/img/portfolio/portada2.jpg';
+import fotoPortadaPortfolio from '../../../src/img/portfolio/portada2.jpg';
 import { Link } from 'react-router-dom';
 
 function Inicio() {
@@ -33,7 +33,7 @@ function Inicio() {
                 </h1>
                 {/* Temporal pharagraph */}
                 <p style={{backgroundColor: '#FFDC0011', color: '#FFDC00'}}>
-                    ⚠️ Esta página está en actual desarrollo. El apartado de blogs está inactivo debido a su escaso contenido a mostrar. Cuando se considere que hay una cantadad aceptable de apuntes, mostraremos dicho apartado ⚠️
+                    ⚠️ Esta página está en actual desarrollo. El apartado de blogs está inactivo debido a su escaso contenido a mostrar. Cuando se considere que hay una cantidad aceptable de apuntes, se os hará accesible dicho apartado ⚠️
                 </p>
                 <p>
                     Aquí encontraras toda la información necesaria sobre desarrollo Front-End, tanto como si estás empezando en ésto como si quieres reforzar ciertos conocimientos. Por lo tanto, sin importar el nivel que tengas, puede que te resulte interesante descubrir que te tengo preparado.

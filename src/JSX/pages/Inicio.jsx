@@ -31,17 +31,11 @@ function Inicio() {
                 <h1>
                     Bienvenid@ a ADP
                 </h1>
-                {/* Temporal pharagraph */}
-                <p style={{backgroundColor: '#FFDC0011', color: '#FFDC00'}}>
-                    ⚠️ Esta página está en actual desarrollo. El apartado de blogs está inactivo debido a su escaso contenido a mostrar. Cuando se considere que hay una cantidad aceptable de apuntes, se os hará accesible dicho apartado ⚠️
-                </p>
                 <p>
                     Aquí encontraras toda la información necesaria sobre desarrollo Front-End, tanto como si estás empezando en ésto como si quieres reforzar ciertos conocimientos. Por lo tanto, sin importar el nivel que tengas, puede que te resulte interesante descubrir que te tengo preparado.
                 </p>
                 <p>
-                    {/* Todo el contenido que encontrarás en los posts del  */}
-                    {/* <Link to='/blog' style={{color: 'white', cursor: 'pointer'}} onClick={()=>window.scrollTo(0, 0)}>Blog</Link>  */}
-                    Todo el contenido que encontrarás en los posts del Blog es contenido propio, sacado de mis <span style={{fontWeight: 'bold'}}>cientos de páginas</span> de apuntes que he ido escribiendo desde que empecé a estudiar programación en verano del 2021.
+                    Todo el contenido que encontrarás en los posts del <Link to='/blog' style={{color: 'white', cursor: 'pointer'}} onClick={()=>window.scrollTo(0, 0)}>Blog</Link> es contenido propio, sacado de mis <span style={{fontWeight: 'bold'}}>cientos de páginas</span> de apuntes que he ido escribiendo desde que empecé a estudiar programación en verano del 2021.
                 </p>
                 <p>
                     {/* Mi objetivo con éste proyecto de página es  */}
@@ -57,10 +51,7 @@ function Inicio() {
                                 <img src={fotoPortadaPortfolio}></img>
                             </article>
                         </Link>
-                        <Link 
-                        // to={`/blog/${idUltimoPost}`} 
-                        // onClick={()=>window.scrollTo(0, 0)} 
-                        className='inicio__main__section__presentacion__link react-link'>
+                        <Link to={`/blog/${idUltimoPost}`} onClick={()=>window.scrollTo(0, 0)} className='inicio__main__section__presentacion__link react-link'>
                             <article>
                                 <h2>Último post</h2>
                                 <h4>{tituloUltimoPost}</h4>

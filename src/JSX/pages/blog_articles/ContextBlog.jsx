@@ -383,50 +383,39 @@ export const ContextPostsProvider = ({ children }) => {
                 </div>
             )
         },
-        // 3: {
-        //     grupo: 'CSS',
-        //     titulo: 'Art.3',
-        //     portadaSrc: '',
-        //     contenido: (
-        //         <div className='post'>
-        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-        //             <h1>Titulo obligatorio Art.3</h1>
-        //         </div>
-        //     )
-        // },
-        // 4: {
-        //     grupo: 'JavaScript',
-        //     titulo: 'Art.4',
-        //     portadaSrc: '',
-        //     contenido: (
-        //         <div className='post'>
-        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-        //             <h1>Titulo obligatorio Art.4</h1>
-        //         </div>
-        //     )
-        // },
-        // 5: {
-        //     grupo: 'JavaScript',
-        //     titulo: 'Art.5',
-        //     portadaSrc: '',
-        //     contenido: (
-        //         <div className='post'>
-        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-        //             <h1>Titulo obligatorio Art.4</h1>
-        //         </div>
-        //     )
-        // },
-        // 6: {
-        //     grupo: 'Git',
-        //     titulo: 'Art.6',
-        //     portadaSrc: 'https://i.imgur.com/TrYZdBz.jpeg',
-        //     contenido: (
-        //         <div className='post'>
-        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-        //             <h1>Titulo obligatorio Art.4</h1>
-        //         </div>
-        //     )
-        // }
+        3: {
+            grupo: 'CSS',
+            titulo: 'Art.3',
+            portadaSrc: '',
+            contenido: (
+                <div className='post'>
+                    <span className='post__read-time'>Tiempo de lectura: x minutos</span>
+                    <h1>Titulo obligatorio Art.3</h1>
+                </div>
+            )
+        },
+        4: {
+            grupo: 'JavaScript',
+            titulo: 'Art.4',
+            portadaSrc: '',
+            contenido: (
+                <div className='post'>
+                    <span className='post__read-time'>Tiempo de lectura: xx minutos</span>
+                    <h1>Titulo obligatorio Art.4</h1>
+                </div>
+            )
+        },
+        5: {
+            grupo: 'Git',
+            titulo: 'Art.6',
+            portadaSrc: 'https://i.imgur.com/TrYZdBz.jpeg',
+            contenido: (
+                <div className='post'>
+                    <span className='post__read-time'>Tiempo de lectura: x minutos</span>
+                    <h1>Titulo obligatorio Art.4</h1>
+                </div>
+            )
+        }
     });
 
     return (

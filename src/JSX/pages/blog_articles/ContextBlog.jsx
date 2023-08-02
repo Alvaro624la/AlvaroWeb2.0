@@ -23,6 +23,7 @@ export const ContextPostsProvider = ({ children }) => {
                     // post__img-title: imagen de cabecera
                     // post__img-normal: imagen de párrafo
                     // corregir: para el desarrollador / para el proceso de creación del post
+            portadaSrc: 'https://i.imgur.com/TrYZdBz.jpeg',
             contenido: (
             <div className='post'>
                 <span className='post__read-time'>Tiempo de lectura: 6 minutos</span>
@@ -123,6 +124,7 @@ export const ContextPostsProvider = ({ children }) => {
         2: {
             grupo: 'HTML',
             titulo: 'Etiquetas semánticas estructurales',
+            portadaSrc: 'https://i.imgur.com/rGMg7Xn.jpg',
             contenido: (
                 <div className='post'>
                     <span className='post__read-time'>Tiempo de lectura: 10 minutos</span>
@@ -381,46 +383,50 @@ export const ContextPostsProvider = ({ children }) => {
                 </div>
             )
         },
-        3: {
-            grupo: 'CSS',
-            titulo: 'Art.3',
-            contenido: (
-                <div className='post'>
-                    <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-                    <h1>Titulo obligatorio Art.3</h1>
-                </div>
-            )
-        },
-        4: {
-            grupo: 'JavaScript',
-            titulo: 'Art.4',
-            contenido: (
-                <div className='post'>
-                    <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-                    <h1>Titulo obligatorio Art.4</h1>
-                </div>
-            )
-        },
-        5: {
-            grupo: 'JavaScript',
-            titulo: 'Art.5',
-            contenido: (
-                <div className='post'>
-                    <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-                    <h1>Titulo obligatorio Art.4</h1>
-                </div>
-            )
-        },
-        6: {
-            grupo: 'Git',
-            titulo: 'Art.6',
-            contenido: (
-                <div className='post'>
-                    <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-                    <h1>Titulo obligatorio Art.4</h1>
-                </div>
-            )
-        }
+        // 3: {
+        //     grupo: 'CSS',
+        //     titulo: 'Art.3',
+        //     portadaSrc: '',
+        //     contenido: (
+        //         <div className='post'>
+        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
+        //             <h1>Titulo obligatorio Art.3</h1>
+        //         </div>
+        //     )
+        // },
+        // 4: {
+        //     grupo: 'JavaScript',
+        //     titulo: 'Art.4',
+        //     portadaSrc: '',
+        //     contenido: (
+        //         <div className='post'>
+        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
+        //             <h1>Titulo obligatorio Art.4</h1>
+        //         </div>
+        //     )
+        // },
+        // 5: {
+        //     grupo: 'JavaScript',
+        //     titulo: 'Art.5',
+        //     portadaSrc: '',
+        //     contenido: (
+        //         <div className='post'>
+        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
+        //             <h1>Titulo obligatorio Art.4</h1>
+        //         </div>
+        //     )
+        // },
+        // 6: {
+        //     grupo: 'Git',
+        //     titulo: 'Art.6',
+        //     portadaSrc: 'https://i.imgur.com/TrYZdBz.jpeg',
+        //     contenido: (
+        //         <div className='post'>
+        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
+        //             <h1>Titulo obligatorio Art.4</h1>
+        //         </div>
+        //     )
+        // }
     });
 
     return (

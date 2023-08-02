@@ -59,7 +59,7 @@ body{
     transition: right 0.4s;
 }
 // ------ INICIO ------ //
-.inicio{
+.porfolio-inicio{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -726,7 +726,7 @@ body{
         font-size: 1.2em;
     }
     // ------ INICIO ------ //
-    .inicio{
+    .porfolio-inicio{
         &__nombrecompleto{
             font-size: 3em;
             font-weight: 500;

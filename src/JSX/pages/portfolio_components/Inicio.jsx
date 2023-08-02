@@ -26,15 +26,15 @@ function Inicio() {
 
   return (
     <>
-    <header className='inicio'>
-      <section className='inicio__titles-cont'>
-        <img className='inicio__titles-cont__fotoperfil' src={fotoPerfil} alt='foto de perfil de Álvaro de Prado'/>
-        <h1 className='inicio__titles-cont__titulo'>{ADPC.nombrecompleto}</h1>
-        <h4 className='inicio__titles-cont__subtitulo'>{ADPC.descripcion}</h4>
-        <article className='inicio__titles-cont__entry-animation'>
-          <div className='inicio__titles-cont__entry-animation__card' style={{opacity: opacityAux, width: `${width}vw`, left:`${left}%`}}></div>
-          <div className='inicio__titles-cont__entry-animation__card' style={{display: display}}></div>
-          <div className='inicio__titles-cont__entry-animation__card' style={{display: display}}></div>
+    <header className='porfolio-inicio'>
+      <section className='porfolio-inicio__titles-cont'>
+        <img className='porfolio-inicio__titles-cont__fotoperfil' src={fotoPerfil} alt='foto de perfil de Álvaro de Prado'/>
+        <h1 className='porfolio-inicio__titles-cont__titulo'>{ADPC.nombrecompleto}</h1>
+        <h4 className='porfolio-inicio__titles-cont__subtitulo'>{ADPC.descripcion}</h4>
+        <article className='porfolio-inicio__titles-cont__entry-animation'>
+          <div className='porfolio-inicio__titles-cont__entry-animation__card' style={{opacity: opacityAux, width: `${width}vw`, left:`${left}%`}}></div>
+          <div className='porfolio-inicio__titles-cont__entry-animation__card' style={{display: display}}></div>
+          <div className='porfolio-inicio__titles-cont__entry-animation__card' style={{display: display}}></div>
         </article>
       </section>
     </header>

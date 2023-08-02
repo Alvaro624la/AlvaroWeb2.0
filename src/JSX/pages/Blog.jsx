@@ -97,9 +97,9 @@ function Blog() {
             <section>
                 <h1>Lista de posts</h1>
                 <ul className='blog__post-container'>
-                    {arrIndexPostFiltered.map((id) => {
+                    {arrIndexPostFiltered.map(id => {
                         return <li key={id} className='blog__post-container__card-block'>
-                            <Link to={`/blog/${id}`}>
+                            <Link to={`/blog/${id}`} onClick={()=>window.scrollTo(0, 0)}>
                                 <article className='blog__post-container__card-block__link-content'>
                                     <img src={cardLogo}></img>
                                     <h1>{Posts[id].titulo}</h1>

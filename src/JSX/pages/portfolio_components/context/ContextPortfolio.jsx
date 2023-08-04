@@ -114,15 +114,24 @@ const ContextPortfolio = (props) => {
 
     const [Certificaciones] = useState({
         htmlCss:{
-            fcc: 'https://freecodecamp.org/certification/Alvaro624la/responsive-web-design',
-            ob: 'https://storage.googleapis.com/openvitae-prod/diplomas%2Fe33fec29-18b7-41ad-bcbe-f694288e9153.pdf',
+            fcc: 'https://i.imgur.com/daGpyQU.jpg',
+            // Caducado por fin del campus OpenBootcamp
+            // ob: 'https://storage.googleapis.com/openvitae-prod/diplomas%2Fe33fec29-18b7-41ad-bcbe-f694288e9153.pdf',
+            ob: 'https://i.imgur.com/AJEjZav.jpg'
         },
         js:{
-            fcc: 'https://www.freecodecamp.org/certification/Alvaro624la/javascript-algorithms-and-data-structures',
-            ob: 'https://storage.googleapis.com/openvitae-prod/diplomas%2Fdb862ba3-0cf1-4491-b4a1-8b1890a53716.pdf',
+            fcc: 'https://i.imgur.com/idNfk2A.jpg',
+            // Caducado por fin del campus OpenBootcamp
+            // ob: 'https://storage.googleapis.com/openvitae-prod/diplomas%2Fdb862ba3-0cf1-4491-b4a1-8b1890a53716.pdf',
+            ob: 'https://i.imgur.com/dd49UP1.jpg'
         },
-        git: 'https://storage.googleapis.com/openvitae-prod/diplomas%2F6f66f0bb-7dc5-42f9-a27f-163171661226.pdf'
+        // Caducado por fin del campus OpenBootcamp
+        // git: 'https://storage.googleapis.com/openvitae-prod/diplomas%2F6f66f0bb-7dc5-42f9-a27f-163171661226.pdf'
+        git: 'https://i.imgur.com/cs7ddgX.jpg'
     });
+
+
+    
 
     return (
         <>

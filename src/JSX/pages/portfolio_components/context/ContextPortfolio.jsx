@@ -76,7 +76,7 @@ const ContextPortfolio = (props) => {
             nombre: 'Miguel Angel de Vallulis',
             subnombre: 'Página web oficial de artista/cantante profesional',
             descripcion: 'Creación de una página web profesional desde 0, y gestionando no solo la parte como desarrollador, sino también, la creación del dominio, el hosting y demás cosas necesarias para su correcto funcionamiento y puesta en marcha.',
-            lenguaje: 'React + Vite'
+            lenguaje: 'React'
         },
         metjs: {
             url: 'https://alvaro624la.github.io/MetJS/',
@@ -84,7 +84,7 @@ const ContextPortfolio = (props) => {
             nombre: 'MetJS',
             subnombre: 'Juego interactivo para resolver problemas JavaScript',
             descripcion: 'Consta de distintos niveles con problemas variados de JavaScript, de menor a mayor dificultad, con indicaciones si la respuesta es correcta o incorrecta.',
-            lenguaje: 'JavaScript'
+            lenguaje: 'React'
         },
         dangerousroad: {
             url: 'https://alvaro624la.github.io/DangerousRoad/',
@@ -114,15 +114,24 @@ const ContextPortfolio = (props) => {
 
     const [Certificaciones] = useState({
         htmlCss:{
-            fcc: 'https://freecodecamp.org/certification/Alvaro624la/responsive-web-design',
-            ob: 'https://storage.googleapis.com/openvitae-prod/diplomas%2Fe33fec29-18b7-41ad-bcbe-f694288e9153.pdf',
+            fcc: 'https://i.imgur.com/daGpyQU.jpg',
+            // Caducado por fin del campus OpenBootcamp
+            // ob: 'https://storage.googleapis.com/openvitae-prod/diplomas%2Fe33fec29-18b7-41ad-bcbe-f694288e9153.pdf',
+            ob: 'https://i.imgur.com/AJEjZav.jpg'
         },
         js:{
-            fcc: 'https://www.freecodecamp.org/certification/Alvaro624la/javascript-algorithms-and-data-structures',
-            ob: 'https://storage.googleapis.com/openvitae-prod/diplomas%2Fdb862ba3-0cf1-4491-b4a1-8b1890a53716.pdf',
+            fcc: 'https://i.imgur.com/idNfk2A.jpg',
+            // Caducado por fin del campus OpenBootcamp
+            // ob: 'https://storage.googleapis.com/openvitae-prod/diplomas%2Fdb862ba3-0cf1-4491-b4a1-8b1890a53716.pdf',
+            ob: 'https://i.imgur.com/dd49UP1.jpg'
         },
-        git: 'https://storage.googleapis.com/openvitae-prod/diplomas%2F6f66f0bb-7dc5-42f9-a27f-163171661226.pdf'
+        // Caducado por fin del campus OpenBootcamp
+        // git: 'https://storage.googleapis.com/openvitae-prod/diplomas%2F6f66f0bb-7dc5-42f9-a27f-163171661226.pdf'
+        git: 'https://i.imgur.com/cs7ddgX.jpg'
     });
+
+
+    
 
     return (
         <>

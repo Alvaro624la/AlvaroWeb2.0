@@ -215,12 +215,13 @@ body{
             }
         }
         &__pc-viewer{
-            margin-bottom: 2em;
+            margin-bottom: 1.2em;
             display: flex;
             flex-direction: row;
             justify-content: center;
 
             &__btns{
+                z-index: 1;
                 cursor: pointer;
                 background-color: transparent;
                 border: 0;
@@ -243,20 +244,56 @@ body{
             }
 
             &__relative-div{
-                background-image: url('https://alvaro624la.github.io/AlvaroWeb2.0../img/portfolio/fotoperfilEDIT2.png');
-                max-width: 28em;
-                width: 100%;
-                background-size: 85% 80%;
-                background-repeat: no-repeat;
-                background-position: 55% 21%;
-                transition: background-size .15s;
                 cursor: pointer;
+                width: 100%;
+                max-width: 35em;
                 position: relative;
+                background: #000;
+                box-shadow: 3px 3px 12px 4px rgba(0, 0, 0, 0.6);
+                transition: all .1s;
+                
+                overflow: hidden;
 
                 &:hover{
-                    background-size: 86% 81%;
-                    transition: background-size .15s;
+                    transform: scale(1.01);
+                    box-shadow: 9px 9px 12px 4px rgba(0, 0, 0, 0.6);
+                    transition: all .2s;
                 }
+
+                &__inside{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: -100%;
+
+                    & > *{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                
+            }
+        }
+        &__skip-slider-btns-cont{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 1.8em;
+
+            & > *{
+                cursor: pointer;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                border: 1px solid #000;
+                background-color: transparent;
+                margin-right: .3em;
+            }
+            &__skip-on{
+                background-color: #000;
+            }
+            &__skip-off{
+                background-color: transparent;
             }
         }
         &__descripcion{

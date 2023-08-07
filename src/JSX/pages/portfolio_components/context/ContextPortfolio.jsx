@@ -76,7 +76,7 @@ const ContextPortfolio = (props) => {
             nombre: 'Miguel Angel de Vallulis',
             subnombre: 'Página web oficial de artista/cantante profesional',
             descripcion: 'Creación de una página web profesional desde 0, y gestionando no solo la parte como desarrollador, sino también, la creación del dominio, el hosting y demás cosas necesarias para su correcto funcionamiento y puesta en marcha.',
-            lenguaje: 'React + Vite'
+            lenguaje: 'React'
         },
         metjs: {
             url: 'https://alvaro624la.github.io/MetJS/',
@@ -84,7 +84,7 @@ const ContextPortfolio = (props) => {
             nombre: 'MetJS',
             subnombre: 'Juego interactivo para resolver problemas JavaScript',
             descripcion: 'Consta de distintos niveles con problemas variados de JavaScript, de menor a mayor dificultad, con indicaciones si la respuesta es correcta o incorrecta.',
-            lenguaje: 'JavaScript'
+            lenguaje: 'React'
         },
         dangerousroad: {
             url: 'https://alvaro624la.github.io/DangerousRoad/',

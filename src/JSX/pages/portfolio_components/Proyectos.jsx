@@ -24,7 +24,7 @@ function Proyectos() {
             setAvailableToChange(false);
             slider.current.style.transition = 'all .75s';
             slider.current.style.marginLeft = '-200%';
-            // 1s dejar actuar a la animacion de slider para luego cambiar las img del arr.
+            // 750ms dejar actuar a la animacion de slider para luego cambiar las img del arr.
             setTimeout(()=>{
                 iPrev   < arr.length - 1 ? setIPrev(iPrev+1)    : setIPrev(0);
                 i       < arr.length - 1 ? setI(i+1)            : setI(0);
@@ -40,7 +40,7 @@ function Proyectos() {
             setAvailableToChange(false);
             slider.current.style.transition = 'all .75s';
             slider.current.style.marginLeft = '0%';
-            // 1s dejar actuar a la animacion de slider para luego cambiar las img del arr.
+            // 750ms dejar actuar a la animacion de slider para luego cambiar las img del arr.
             setTimeout(()=>{
                 iPrev   > 0 ? setIPrev(iPrev-1) : setIPrev(arr.length-1);
                 i       > 0 ? setI(i-1)     : setI(arr.length-1);
@@ -108,7 +108,6 @@ function Proyectos() {
     }, [isIntersecting]);
 
     
-
     return (
         <>
         <main className='proyectos'>

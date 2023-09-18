@@ -24,6 +24,7 @@ function Inicio() {
     // texto de muestra
     // const muestraTextoUltimoPost = postsTodo[indexUltimoPost][1].blablabla;
 
+
     return (
         <>
         <div className='inicio'>
@@ -33,7 +34,7 @@ function Inicio() {
                 </h1>
                 {/* Temporal pharagraph */}
                 <p style={{backgroundColor: '#FFDC0011', color: '#FFDC00'}}>
-                    ⚠️ Esta página está en actual desarrollo. El apartado de blogs está actualmente falto y pobre en cuanto a contenido se refiere. Poco a poco iré añadiendo funcionalidades y contenido variado como de HTML, CSS, JavaScript, React, Git, etc. ⚠️
+                    ⚠️ Esta página está en actual desarrollo. El apartado de blogs está actualmente falto y pobre en cuanto a contenido se refiere. Poco a poco iré añadiendo funcionalidades y contenido variado como puede ser HTML, CSS, JavaScript, React, Git, etc. ⚠️
                 </p>
                 <p>
                     Aquí encontraras toda la información necesaria sobre desarrollo Frontend, tanto como si estás empezando en esto como si quieres reforzar ciertos conocimientos. Por lo tanto, sin importar el nivel que tengas, puede que te resulte interesante descubrir que te tengo preparado.
@@ -52,17 +53,14 @@ function Inicio() {
                             <article>
                                 <h2>Portfolio</h2>
                                 <h4>Álvaro de Prado</h4>
-                                <img src={fotoPortadaPortfolio}></img>
+                                <img src={fotoPortadaPortfolio} alt='foto portada portfolio'></img>
                             </article>
                         </Link>
-                        <Link 
-                        to={`/blog/${idUltimoPost}`} 
-                        onClick={()=>window.scrollTo(0, 0)} 
-                        className='inicio__main__section__presentacion__link react-link'>
+                        <Link to={`/blog/${idUltimoPost}`} onClick={()=>window.scrollTo(0, 0)} className='inicio__main__section__presentacion__link react-link'>
                             <article>
                                 <h2>Último post</h2>
                                 <h4>{tituloUltimoPost}</h4>
-                                <img src={fotoPortadaUltimoPost}></img>
+                                <img src={fotoPortadaUltimoPost} alt="foto de portada del último post"></img>
                             </article>
                         </Link>
                     </article>

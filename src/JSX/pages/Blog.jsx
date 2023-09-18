@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { ContextPosts } from './blog_articles/ContextBlog';
 import cardLogo from '/logo-pattern-adp2.png';
 import { BiSearchAlt2 } from "react-icons/bi";
-import temporalPhoto from "../../../src/img/proximamente.png";
 
 function Blog() {
     const { Posts } = useContext(ContextPosts);
@@ -98,9 +97,9 @@ function Blog() {
             <section>
                 <h1>Lista de posts</h1>
                 <ul className='blog__post-container'>
-                    {arrIndexPostFiltered.map(id => {
+                    {arrIndexPostFiltered.map((id) => {
                         return <li key={id} className='blog__post-container__card-block'>
-                            <Link to={`/blog/${id}`} onClick={()=>window.scrollTo(0, 0)}>
+                            <Link to={`/blog/${id}`}>
                                 <article className='blog__post-container__card-block__link-content'>
                                     <img src={cardLogo}></img>
                                     <h1>{Posts[id].titulo}</h1>

@@ -1,4 +1,20 @@
 import React, { createContext, useState } from 'react';
+// 1
+import TrYZdBz from '../../../../src/img/context-blog/TrYZdBz.jpeg';
+import zzFKRxs from '../../../../src/img/context-blog/zzFKRxs.jpg';
+import w5Ertcx from '../../../../src/img/context-blog/w5Ertcx.jpg';
+import HjblNQY from '../../../../src/img/context-blog/HjblNQY.jpg';
+import IgeQnBJ from '../../../../src/img/context-blog/IgeQnBJ.jpg';
+import qjv9mPb from '../../../../src/img/context-blog/qjv9mPb.jpg';
+import Rie35OT from '../../../../src/img/context-blog/Rie35OT.jpg';
+import r67kJti from '../../../../src/img/context-blog/r67kJti.png';
+//2
+import rGMg7Xn from '../../../../src/img/context-blog/rGMg7Xn.jpg';
+import bbnwIg9 from '../../../../src/img/context-blog/bbnwIg9.jpg';
+import eOiZpTg from '../../../../src/img/context-blog/eOiZpTg.gif';
+//3
+
+
 
 export const ContextPosts = createContext();
 
@@ -23,13 +39,13 @@ export const ContextPostsProvider = ({ children }) => {
                     // post__img-title: imagen de cabecera
                     // post__img-normal: imagen de párrafo
                     // corregir: para el desarrollador / para el proceso de creación del post
-            portadaSrc: 'https://i.imgur.com/TrYZdBz.jpeg',
+            portadaSrc: TrYZdBz,
             contenido: (
             <div className='post'>
                 <span className='post__read-time'>Tiempo de lectura: 6 minutos</span>
                 <h1>El inicio de internet</h1>
                 <figure className='post__img-title'>
-                    <img src='https://i.imgur.com/TrYZdBz.jpeg' alt='Imagen del satélite Sputnik 1'/>
+                    <img src={TrYZdBz} alt='Imagen del satélite Sputnik 1'/>
                     <figcaption>Satélite Sputnik 1</figcaption>
                 </figure>
                 <h2>Introducción</h2>
@@ -45,7 +61,7 @@ export const ContextPostsProvider = ({ children }) => {
                     En EEUU crearon la <span>ARPA</span> &#40;Agencia de proyectos de Investigación Avanzada&#41; y con ella, la creación de Internet con <span>ARPANET</span>, la primera red de ordenadores diseñada en un principio para comunicaciones militares descentralizadas.
                 </p>
                 <figure className='post__img-normal'>
-                    <img src='https://i.imgur.com/zzFKRxs.jpg' alt='Imagen de trabajadores de ARPA'/>
+                    <img src={zzFKRxs} alt='Imagen de trabajadores de ARPA'/>
                     <figcaption>Trabajadores de ARPA</figcaption>
                 </figure>
                 <p>
@@ -61,14 +77,14 @@ export const ContextPostsProvider = ({ children }) => {
                     El 6 de agosto de 1991, en Suiza, <span>Tim Berners-Lee</span>, de <span>CERN</span> &#40;consejo europeo de investigación nuclear&#41;, publicó su proyecto en el servicio de noticias Usenet, que sería la <span>primera página web de la historia</span>, con la ayuda de su compañero de CERN <span>Robert Cailliau</span>, que fue pieza clave en la creación, difusión y mantenimiento continuo hasta 2015 de la WWW. Creó un servidor para publicar hipertexto y un programa para leerlo, denominado <span>World Wide Web</span>, creando un servidor y un buscador que permitían acceder y compartir información desde ordenadores distintos. 
                 </p>
                 <figure className='post__img-normal'>
-                    <img src='https://i.imgur.com/w5Ertcx.jpg' alt='Imagen de Tim Berners-Lee'/>
+                    <img src={w5Ertcx} alt='Imagen de Tim Berners-Lee'/>
                     <figcaption>Tim Berners-Lee junto a los logos de CERN y World Wide Web</figcaption>
                 </figure>
                 <p>
                     Él y su grupo crearon lo que por sus siglas en inglés se denomina Lenguaje <span>HTML</span> &#40;HyperText Markup Language&#41; o lenguaje de etiquetas de hipertexto, el protocolo <span>HTTP</span> &#40;HyperText Transfer Protocol&#41; y el sistema de localización de objetos en la web <span>URL</span> &#40;Uniform Resource Locator&#41;, pero <span>Gopher</span> ganó protagonismo por dos acontecimientos, hasta que cometió el error de en 1993 empezar a cobrar por su uso, entonces fue ese mismo año, el 30 de abril de 1993 el CERN cedió el código fuente del WWW al dominio público, dando lugar a la creación por parte de NCSA, de <span>Mosaic</span>, el primer navegador &#40;era una combinación de navegador web y cliente Gopher&#41;, generando mucha popularidad y, en consecuencia, también la web, generando así muchos tipos de navegadores, destacado entre ellos la primera versión de Opera en 1994.
                 </p>
                 <figure className='post__img-normal'>
-                    <img src='https://i.imgur.com/HjblNQY.jpg' alt='Imagen del navegador Mosaic'/>
+                    <img src={HjblNQY} alt='Imagen del navegador Mosaic'/>
                     <figcaption>Mosaic</figcaption>
                 </figure>
                 <h2>Guerra de navegadores</h2>
@@ -81,7 +97,7 @@ export const ContextPostsProvider = ({ children }) => {
                     <li>Opera; que se mantenía modesta, intentando innovar y siendo compatible.</li>
                 </ul>
                 <figure className='post__img-normal'>
-                    <img src='https://i.imgur.com/IgeQnBJ.jpg' alt='Imagen; de izquierda a derecha, Internet Explorer y Netscape'/>
+                    <img src={IgeQnBJ} alt='Imagen; de izquierda a derecha, Internet Explorer y Netscape'/>
                     <figcaption>De izquierda a derecha, Internet Explorer y Netscape</figcaption>
                 </figure>
                 <h2>W3C y los estándares web</h2>
@@ -89,7 +105,7 @@ export const ContextPostsProvider = ({ children }) => {
                     A causa de tal descontrol se formó el W3C &#40;World Wide Web Consortium&#41; que publicó varias especificaciones denominadas recomendaciones, incluyendo HTML 4 y CSS 1 y 2, que pronto mejoró WaSP &#40;Proyecto de Estándares Web&#41; que planteó cambiar el término recomendaciones por <span>estándares</span>, porque las webs se seguían creando sin tener en cuenta W3C.
                 </p>
                 <figure className='post__img-normal'>
-                    <img src='https://i.imgur.com/qjv9mPb.jpg' alt='Imagen del logotipo de W3C, Internet Explorer y Netscape'/>
+                    <img src={qjv9mPb} alt='Imagen del logotipo de W3C, Internet Explorer y Netscape'/>
                     <figcaption>Logotipo de W3C</figcaption>
                 </figure>
                 <p>
@@ -102,7 +118,7 @@ export const ContextPostsProvider = ({ children }) => {
                     Desde entonces, en la comunidad de desarrollo web profesional, los estándares web se han convertido en un elemento de rigor.
                 </p>
                 <figure className='post__img-normal'>
-                    <img src='https://i.imgur.com/Rie35OT.jpg' alt='Imagen de cabecera de la página oficial de CSS Zen Garden'/>
+                    <img src={Rie35OT} alt='Imagen de cabecera de la página oficial de CSS Zen Garden'/>
                     <figcaption>Cabecera de la página oficial de CSS Zen Garden</figcaption>
                 </figure>
                 <h2>Accesibilidad</h2>
@@ -110,7 +126,7 @@ export const ContextPostsProvider = ({ children }) => {
                     El W3C es uno de los principales organismos de estándares de Internet. Su Web Accessibility Initiative &#40;WAI&#41; publicó la primera versión de sus directrices para unos sitios web accesibles en el mes de mayo de 1999. Las directrices de accesibilidad del contenido web &#40;WCAG&#41; son el estándar más utilizado para la accesibilidad de la web. Varios organismos gubernamentales, que incluyen a la UE y al gobierno italiano, recomiendan o exigen el uso de las WCAG 1.0.
                 </p>
                 <figure className='post__img-normal'>
-                    <img src='https://i.imgur.com/r67kJti.png' alt='Imagen del logotipo de WAI'/>
+                    <img src={r67kJti} alt='Imagen del logotipo de WAI'/>
                     <figcaption>Ilustración de WCAG 3.0 &#40;primer borrador: 7 diciembre 2021&#41;</figcaption>
                 </figure>
                 <p>
@@ -124,13 +140,13 @@ export const ContextPostsProvider = ({ children }) => {
         2: {
             grupo: 'HTML',
             titulo: 'Etiquetas semánticas estructurales',
-            portadaSrc: 'https://i.imgur.com/rGMg7Xn.jpg',
+            portadaSrc: rGMg7Xn,
             contenido: (
                 <div className='post'>
                     <span className='post__read-time'>Tiempo de lectura: 10 minutos</span>
                     <h1>Etiquetas semánticas estructurales</h1>
                     <figure className='post__img-title'>
-                        <img src='https://i.imgur.com/rGMg7Xn.jpg' alt='Código HTML en un navegador'/>
+                        <img src={rGMg7Xn} alt='Código HTML en un navegador'/>
                     </figure>
                     <h2>Introducción</h2>
                     <p>
@@ -162,7 +178,7 @@ export const ContextPostsProvider = ({ children }) => {
                         El HTML semántico es procesado por los navegadores web regulares así como por muchos otros agentes de usuarios, que son los encargados de proporcionar la información necesaria al servidor web para que este genere el contenido que nosotros vemos, como clientes.
                     </p>
                     <figure className='post__img-normal'>
-                        <img src='https://i.imgur.com/bbnwIg9.jpg' alt='Estructura HTML4 vs. el HTML semántico de HTML5'/>
+                        <img src={bbnwIg9} alt='Estructura HTML4 vs. el HTML semántico de HTML5'/>
                         <figcaption>HTML4 vs. HTML5</figcaption>
                     </figure>
                     <h2>Nomenclatura</h2>
@@ -187,7 +203,7 @@ export const ContextPostsProvider = ({ children }) => {
                         <li><span>Contenido</span>: El resultado o lo que vemos en pantalla.</li>
                     </ul>
                     <figure className='post__img-normal'>
-                        <img src='https://i.imgur.com/eOiZpTg.gif' alt='Ilustración de los conceptos de nomenclatura HTML recién explicados'/>
+                        <img src={eOiZpTg} alt='Ilustración de los conceptos de nomenclatura HTML recién explicados'/>
                         <figcaption>Vista general de la nomenclatura</figcaption>
                     </figure>
                     <h2>Estructura general</h2>
@@ -384,7 +400,7 @@ export const ContextPostsProvider = ({ children }) => {
             )
         },
         3: {
-            grupo: 'CSS',
+            grupo: 'MySQL',
             titulo: 'Art.3',
             portadaSrc: '',
             contenido: (
@@ -394,28 +410,39 @@ export const ContextPostsProvider = ({ children }) => {
                 </div>
             )
         },
-        4: {
-            grupo: 'JavaScript',
-            titulo: 'Art.4',
-            portadaSrc: '',
-            contenido: (
-                <div className='post'>
-                    <span className='post__read-time'>Tiempo de lectura: xx minutos</span>
-                    <h1>Titulo obligatorio Art.4</h1>
-                </div>
-            )
-        },
-        5: {
-            grupo: 'Git',
-            titulo: 'Art.6',
-            portadaSrc: 'https://i.imgur.com/TrYZdBz.jpeg',
-            contenido: (
-                <div className='post'>
-                    <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-                    <h1>Titulo obligatorio Art.4</h1>
-                </div>
-            )
-        }
+        // 4: {
+        //     grupo: 'JavaScript',
+        //     titulo: 'Art.4',
+        //     portadaSrc: '',
+        //     contenido: (
+        //         <div className='post'>
+        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
+        //             <h1>Titulo obligatorio Art.4</h1>
+        //         </div>
+        //     )
+        // },
+        // 5: {
+        //     grupo: 'JavaScript',
+        //     titulo: 'Art.5',
+        //     portadaSrc: '',
+        //     contenido: (
+        //         <div className='post'>
+        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
+        //             <h1>Titulo obligatorio Art.4</h1>
+        //         </div>
+        //     )
+        // },
+        // 6: {
+        //     grupo: 'Git',
+        //     titulo: 'Art.6',
+        //     portadaSrc: '../../../../src/img/context-blog/TrYZdBz.jpeg',
+        //     contenido: (
+        //         <div className='post'>
+        //             <span className='post__read-time'>Tiempo de lectura: x minutos</span>
+        //             <h1>Titulo obligatorio Art.4</h1>
+        //         </div>
+        //     )
+        // }
     });
 
     return (

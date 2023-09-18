@@ -19,7 +19,7 @@
             align-items: center;
             
             & > *{
-                border-color: #0c5c92;
+                border-color: $color-blueADP;
                 border-style: solid;
                 font-size: 1.15em;
                 color: #ffffff;
@@ -53,7 +53,7 @@
                 }
 
                 &:active{
-                    background-color: #0c5c92;
+                    background-color: $color-blueADP;
                 }
             }
         }
@@ -70,7 +70,7 @@
                 border-radius: .75em;
                 border: 0;
                 color: $color-darkMode;
-                background-color: #0c5c92;
+                background-color: $color-blueADP;
                 font-size: 1em;
                 cursor: pointer;
                 font-weight: 600;

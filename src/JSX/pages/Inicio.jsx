@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ContextPosts } from './blog_articles/ContextBlog';
-import fotoPortadaPortfolio from '../../../src/img/portfolio/portada2.jpg';
+import fotoPortadaPortfolio from '../../../src/img/portfolio/portada5.jpg';
 import { Link } from 'react-router-dom';
 
 function Inicio() {
@@ -24,6 +24,7 @@ function Inicio() {
     // texto de muestra
     // const muestraTextoUltimoPost = postsTodo[indexUltimoPost][1].blablabla;
 
+
     return (
         <>
         <div className='inicio'>
@@ -31,8 +32,12 @@ function Inicio() {
                 <h1>
                     Bienvenid@ a ADP
                 </h1>
+                {/* Temporal pharagraph */}
+                <p style={{backgroundColor: '#FFDC0011', color: '#FFDC00'}}>
+                    ⚠️ Esta página está en actual desarrollo. El apartado de blogs está actualmente falto y pobre en cuanto a contenido se refiere. Poco a poco iré añadiendo funcionalidades y contenido variado como puede ser HTML, CSS, JavaScript, React, Git, etc. ⚠️
+                </p>
                 <p>
-                    Aquí encontraras toda la información necesaria sobre desarrollo Front-End, tanto como si estás empezando en ésto como si quieres reforzar ciertos conocimientos. Por lo tanto, sin importar el nivel que tengas, puede que te resulte interesante descubrir que te tengo preparado.
+                    Aquí encontraras toda la información necesaria sobre desarrollo Frontend, tanto como si estás empezando en esto como si quieres reforzar ciertos conocimientos. Por lo tanto, sin importar el nivel que tengas, puede que te resulte interesante descubrir que te tengo preparado.
                 </p>
                 <p>
                     Todo el contenido que encontrarás en los posts del <Link to='/blog' style={{color: 'white', cursor: 'pointer'}} onClick={()=>window.scrollTo(0, 0)}>Blog</Link> es contenido propio, sacado de mis <span style={{fontWeight: 'bold'}}>cientos de páginas</span> de apuntes que he ido escribiendo desde que empecé a estudiar programación en verano del 2021.
@@ -48,14 +53,14 @@ function Inicio() {
                             <article>
                                 <h2>Portfolio</h2>
                                 <h4>Álvaro de Prado</h4>
-                                <img src={fotoPortadaPortfolio}></img>
+                                <img src={fotoPortadaPortfolio} alt='foto portada portfolio'></img>
                             </article>
                         </Link>
                         <Link to={`/blog/${idUltimoPost}`} onClick={()=>window.scrollTo(0, 0)} className='inicio__main__section__presentacion__link react-link'>
                             <article>
                                 <h2>Último post</h2>
                                 <h4>{tituloUltimoPost}</h4>
-                                <img src={fotoPortadaUltimoPost}></img>
+                                <img src={fotoPortadaUltimoPost} alt="foto de portada del último post"></img>
                             </article>
                         </Link>
                     </article>

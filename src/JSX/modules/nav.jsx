@@ -30,7 +30,7 @@ function nav() {
                 <NavLink className='nav__link' to='' onClick={scrollAndHideBrgNav}>Inicio</NavLink>
                 <NavLink className='nav__link' to='/portfolio' onClick={scrollAndHideBrgNav}>Portfolio</NavLink>
                 <NavLink className='nav__link' to='/blog' onClick={scrollAndHideBrgNav}>Blog</NavLink>
-                {/* <NavLink className='nav__link' to='/devtests' onClick={scrollAndHideBrgNav}>DevTests</NavLink> */}
+                <NavLink className='nav__link' to='/devtests' onClick={scrollAndHideBrgNav}>DevTests</NavLink>
                 <NavLink className='nav__link nav__link__last' to='/contacto' onClick={scrollAndHideBrgNav}>Contacto</NavLink>
             </article>
             <article className={bar} onClick={burguerNavIn}>

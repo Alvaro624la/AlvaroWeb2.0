@@ -15,10 +15,8 @@ function Devtests() {
 
     return (
         <>
-        <main className='home'>
-            <img src="./img/proximamente.png"></img>
-            <button className='temporal-btn' to='/portfolio' onClick={handleClick}>Ver Portfolio <RxDoubleArrowRight/></button>
-            <h1>DevTests: Álvaro está trabajando en ello, probablemente, ahora mismo.</h1>
+        <main className='tests'>
+            {/* hacer tests en TDD antes de crear el apartado de tests*/}
         </main>
         </>
     )

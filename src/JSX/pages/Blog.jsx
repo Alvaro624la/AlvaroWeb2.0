@@ -110,6 +110,15 @@ function Blog() {
                     })}
                 </ul>
             </section>
+            {/* <div style={{
+                padding: '1em',
+                display: 'grid',
+                justifyItems: 'center'
+                }}>
+                <img src={temporalPhoto} style={{width: '80%', maxWidth: '600px'}}/>
+                <Link to={`/portfolio`} style={{textDecoration: 'none'}}><button style={{width: '80vw'}} class="temporal-btn">Ver Portfolio</button></Link>
+                <h1>⚠️ Blog: Álvaro está trabajando en ello, probablemente, ahora mismo. ⚠️</h1>
+            </div> */}
         </main>
         </>
     )

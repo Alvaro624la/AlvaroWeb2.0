@@ -13,7 +13,7 @@ import rGMg7Xn from '../../../../src/img/context-blog/rGMg7Xn.jpg';
 import bbnwIg9 from '../../../../src/img/context-blog/bbnwIg9.jpg';
 import eOiZpTg from '../../../../src/img/context-blog/eOiZpTg.gif';
 //3
-
+import post3img1 from '../../../../src/img/context-blog/post3img1.jpg';
 
 
 export const ContextPosts = createContext();
@@ -401,12 +401,54 @@ export const ContextPostsProvider = ({ children }) => {
         },
         3: {
             grupo: 'MySQL',
-            titulo: 'Art.3',
-            portadaSrc: '',
+            titulo: 'Bases de datos',
+            portadaSrc: post3img1,
             contenido: (
                 <div className='post'>
-                    <span className='post__read-time'>Tiempo de lectura: x minutos</span>
-                    <h1>Titulo obligatorio Art.3</h1>
+                    <span className='post__read-time'>Tiempo de lectura: 2 minutos</span>
+                    <h1>Bases de datos</h1>
+                    <figure className='post__img-title'>
+                        <img src={post3img1} alt='Imagen fondo/portada de bases de datos'/>
+                    </figure>
+                        <h2>¿Qué es un dato?</h2>
+                            <p>El <span>dato</span> es un atributo o info que refleja el valor de una característica de un objeto.</p>
+                            <p>Hay datos de tipo:</p>
+                            <ul>
+                                <li>Cualitativo: Indican cualidades como textura, color, experiencia…</li>
+                                <li>Cuantitativo: Forma numérica</li>
+                            </ul>
+                            <p>Y la <span>información</span> es ese conjunto de datos. Por ejemplo. Allí hay <span>tres</span>(cuantitativo) manzanas <span>rojas</span> (cualitativo).</p>
+                            <p>Y es necesaria una base de datos para <span>ordenar, clasificar y relacionar</span> dicha información.</p>
+                        <h2>¿Qué es una base de datos?</h2>
+                        <ul>
+                            <li>Es un <span>conjunto de datos almacenados, organizados y relacionados</span> entre sí.</li>
+                            <li>Las bases de datos <span>cambian</span> con el tiempo, <span>insertando</span> o <span>borrando</span> información.</li>
+                            <li>Y al <span>diseño</span> de la base de datos se le llama <span>esquema de base de datos</span>:
+                                <ul>
+                                    <li>Esquema físico: Describe el diseño físico</li>
+                                    <li>Esquema lógico: Describe el diseño de BBDD en el nivel lógico.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h2>Ventajas de tener una BBDD:</h2>
+                        <ul>
+                            <li>Independencia de los datos</li>
+                            <li>Menor redundancia: Eliminaremos info duplicada y/o repetido e inútil.</li>
+                            <li>Mayor seguridad de los datos: Podremos clasificar y dar una patrón de seguridad a nuestros datos.</li>
+                            <li>Datos más organizados.</li>
+                            <li>Acceso eficiente a la BBDD.</li>
+                            <li>Menor espacio de almacenamiento necesario.</li>
+                        </ul>
+                        <h2>Tablas:</h2>
+                        <p>Vamos a utilizar bastantes tablas en nuestra BBDD. Las tablas contienen:</p>
+                        <ul>
+                            <li>Filas / tuplas (relación horizontal)</li>
+                            <li>Columna / campo (relación vertical)</li>
+                            <li>Atributos: Son las propiedades de las entidades (son como los títulos encima de cada columna o fila si fuesen los títulos a un lado)</li>
+                            <li>Registros: Son los datos almacenados en cada uno de los recuadros de la tabla.</li>
+                            <li>Grado: Propiedad que es el número de atributos o columnas de una tabla.. Ej: Grado: 4</li>
+                            <li>Cardinalidad: Propiedad que es el número de filas de una tabla. Ej: Cardinalidad: 4</li>
+                        </ul>
                 </div>
             )
         },

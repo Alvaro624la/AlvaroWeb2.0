@@ -14,6 +14,9 @@ import bbnwIg9 from '../../../../src/img/context-blog/bbnwIg9.jpg';
 import eOiZpTg from '../../../../src/img/context-blog/eOiZpTg.gif';
 //3
 import post3img1 from '../../../../src/img/context-blog/post3img1.jpg';
+//4
+import post4img1 from '../../../../src/img/context-blog/post4img1.jpg';
+import post4img2 from '../../../../src/img/context-blog/post4img2.jpg';
 
 
 export const ContextPosts = createContext();
@@ -448,6 +451,50 @@ export const ContextPostsProvider = ({ children }) => {
                             <li>Registros: Son los datos almacenados en cada uno de los recuadros de la tabla.</li>
                             <li>Grado: Propiedad que es el número de atributos o columnas de una tabla.. Ej: Grado: 4</li>
                             <li>Cardinalidad: Propiedad que es el número de filas de una tabla. Ej: Cardinalidad: 4</li>
+                        </ul>
+                </div>
+            )
+        },
+        4: {
+            grupo: 'MySQL',
+            titulo: 'SQL y MySQL',
+            portadaSrc: post4img1,
+            contenido: (
+                <div className='post'>
+                    <span className='post__read-time'>Tiempo de lectura: 2 minutos</span>
+                    <h1>SQL y MySQL</h1>
+                    <figure className='post__img-title'>
+                        <img src={post4img1} alt='Imagen fondo/portada de bases de datos'/>
+                    </figure>
+                        <h2>¿Qué es SQL?</h2>
+                        <p>Es un lenguaje de consultas estructurado (<span>S</span>tructured <span>Q</span>uery(consulta) <span>L</span>anguage). No es un lenguaje de programación, porque no hay métodos, bucles, funciones… solo es un lenguaje que extrae información. <span>Es un lenguaje de extracción de información o de consulta.</span></p>
+                        <h2>Motor de base de datos:</h2>
+                        <p>Un motor SQL es un tipo de software que recopila e interpreta comandos SQL para que se puedan realizar las operaciones apropiadas en la base de datos relacional. Su objetivo es crear, leer, actualizar y eliminar datos (CRUD(Crear, Leer, Actualizar y Borrar)) de una base de datos.</p>
+                        <p> SQL usa varios motores de base de datos, como por ejemplo, DB2, MariaDB, SQL Server, Oracle, PostgreSQL y <span>MySQL</span>.</p>
+                        <ul>
+                            <li>Explicación algo más detallada: Cada motor de base de datos SQL tiene dos componentes principales: <span>compilador</span> y <span>máquina virtual</span> para ejecutar consultas. Donde el compilador lee la consulta y la convierte en un código de bytes apropiado. Luego ese código de bytes es evaluado por la máquina virtual y luego se le da una respuesta adecuada al cliente.</li>
+                        </ul>
+                        <h2>¿Qué es MySQL?</h2>
+                        <p>Es uno de los <span>motores de bases de datos</span> más empleados actualmente(2023) y se creó para controlar bases de datos relacionales.</p>
+                        <p>En Wikipedia se define MySQL y demás motores de base de datos como: sistema de gestión de bases de datos relacional.</p>
+                        <figure className='post__img-normal'>
+                            <img src={post4img2} alt='Ilustración de los conceptos de nomenclatura HTML recién explicados'/>
+                            <figcaption>SQL vs MySQL</figcaption>
+                        </figure>
+                        <h2>Conclusión</h2>
+                        <ul>
+                            <li>SQL:
+                                <ul>
+                                    <li>Es el lenguaje propiamente, los comandos (como puede ser; select from), para llamar a la información de la BBDD.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>MySQL:
+                                <ul>
+                                    <li>Motor de búsqueda que interpreta el lenguaje SQL y ejecuta acciones en la BBDD.</li>
+                                </ul>
+                            </li>
                         </ul>
                 </div>
             )
